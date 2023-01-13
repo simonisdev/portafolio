@@ -363,6 +363,32 @@ main .main--container .main--img {
 .grid-container div ul li a {
     font-size: 1rem;
 }
+
+.section__contact {
+    background-color: yellow;
+}
+/* Mobile first styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label, input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
 .footer {
     display: flex;
     align-items: center;
@@ -374,3 +400,26 @@ main .main--container .main--img {
 .footer a {
     color: #fff;
 }
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    .section__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
+        height: 90vh;
+    }
+    .section__contact
+    .section__contact--form {
+        width: 400px;
+        flex-wrap: nowrap;
+    }
+    label {
+      width: 25%;
+    }
+    input, textarea {
+      width: 75%;
+    }
+  }
