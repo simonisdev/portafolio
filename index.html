@@ -56,6 +56,8 @@
         </nav>
     </header>
 
+    
+
     <main class="main">
 
         <section class="section__info--container">
@@ -360,7 +362,7 @@
                     <!-- <h2>Contacto</h2> -->
                     <h2><i class="far fa-comments"></i></h2>
                 </div>
-                <form id="contact-form">
+                <form id="contact-form" action="./cform.php" method="post">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" required>
                   
@@ -377,8 +379,15 @@
         </section>
 
     </main>
+
+    <button id="back-to-top">^</button>
+
     <footer class="footer">
         <div class="copyright">Copyright © 2023 - <a href="#">Simón Agredo</a></div>
     </footer>
+
+    <!-- <script src="./cform.js"></script> -->
+    <script src="./script.js"></script>
+
 </body>
 </html>
