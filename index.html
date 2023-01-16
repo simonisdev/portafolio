@@ -13,18 +13,47 @@
 <body>
     <header id="header" class="header">
         <!-- identidad visual - logo -->
-        <div class="header--logo">
+        <!-- <div class="header--logo">
             <a href="#">
-                <!-- <i class="fas fa-home"></i> -->
+                <i class="fas fa-home"></i>
             </a>            
-        </div>
-        <!-- <a href="./">Home</a> -->
-        <nav class="nav">
+        </div> -->
+
+        <nav class="nav__mobile">
+            <button id="menu-button"><i class="fas fa-bars"></i></button>
+            <ul id="menu-list">
+                <li>
+                    <a href="#section__tecnologies">
+                        <i class="fas fa-laptop-code"> Lenguajes</i>
+                        <!-- <span>Lenguajes</span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#section__projects">
+                        <i class="fas fa-project-diagram"> Proyectos</i>
+                        <!-- <span>Proyectos</span> -->
+                    </a>
+                </li>
+                <li>
+                <a href="#section__training">
+                    <i class="fas fa-book-reader"> Formación</i>
+                    <!-- <span>Formación</span> -->
+                </a>
+            </li>
+            <li>
+                <a href="#section__contact">
+                    <i class="fas fa-user-circle"> Contacto</i>
+                    <!-- <span>Contacto</span> -->
+                </a>
+            </li>
+            </ul>
+        </nav>
+            
+        <nav class="nav__desktop">
             <ul class="menu-primary">
-                <li class="menu-primary__item"> <!-- header--list-item -->
+                <li class="menu-primary__item">
                     <a href="#section__tecnologies">
                         <i class="fas fa-laptop-code"></i>
-                        <!-- <i class="fas fa-home"></i> -->
                         <span>Lenguajes</span>
                     </a>
                 </li>
@@ -34,12 +63,12 @@
                         <span>Proyectos</span>
                     </a>
                 </li>
-                <li class="menu-primary__item">
+                <!-- <li class="menu-primary__item">
                     <a href="#">
                         <i class="far fa-newspaper"></i>
                         <span>Blog</span>
                     </a>
-                </li>
+                </li> -->
                 <li class="menu-primary__item">
                     <a href="#section__training">
                         <i class="fas fa-book-reader"></i>
@@ -56,20 +85,16 @@
         </nav>
     </header>
 
-    
-
     <main class="main">
-
         <section class="section__info--container">
-            <div id="ini-section" class="main--container">
+            <div class="main--container" id="ini-section">
                 <div class="img--container">
-                    <!--https://picsum.photos/200-->
-                    <img class="main--img" src="./images/avatar_perfil.jpg" alt="Mi foto de perfil">
+                    <img class="info--img" src="./images/avatar_perfil.jpg" alt="Mi foto de perfil">
                 </div>
                 <div class="main--info">
                     <p class="info--name">Simón Agredo</p>
-                    <h1 class="info--title">Front-End Developer</h1> <br>
-                    <!-- <p class="info--description">Soy desarrollador Front-End, con experiencia en HTML, CSS y JavaScript. Tengo capacitación en Angular y estoy aprendiendo y practicando constantemente para mejorar mis habilidades en esta herramienta.</p> -->
+                    <h1 class="info--title">Front-End Developer</h1>
+                    <br>
                     <p class="info--description">
                         Como desarrollador Front-End cuento con experiencia en HTML, CSS y JavaScript, además he  recibido capacitación en Angular y estoy comprometido en mejorar constantemente mis habilidades a través de práctica y aprendizaje continuo.
                     </p>
@@ -105,7 +130,7 @@
                                     <i class="fab fa-github"></i>
                                 </a>
                             </li>
-                            <li class="social-menu__item">
+                            <!-- <li class="social-menu__item">
                                 <a href="https://twitter.com" target="_blank">
                                     <i class="fab fa-twitter"></i>
                                 </a>
@@ -114,7 +139,7 @@
                                 <a href="https://instagram.com" target="_blank">
                                     <i class="fab fa-instagram-square"></i>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
     

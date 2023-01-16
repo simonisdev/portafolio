@@ -30,3 +30,13 @@ backToTopButton.onclick = function() {
         else clearInterval(scrollInterval); 
     },15);
 };
+
+// Obtener el botón y el menú
+const menuButton = document.getElementById("menu-button");
+const menuList = document.getElementById("menu-list");
+
+// Agregar un evento al hacer clic en el botón
+menuButton.addEventListener("click", function() {
+  // Alternar la clase "open" en el menú
+  menuList.classList.toggle("open");
+});

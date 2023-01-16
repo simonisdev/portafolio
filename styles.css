@@ -42,10 +42,9 @@ a {
     padding: 15px;
     height: 20vh;
 } */
-.header--logo {
-    /* min-height: 20px; */
+/* .header--logo {
     padding-left: 10px;
-}
+} */
 .back-home {
     text-align: right;
     padding-right: 10px;
@@ -62,19 +61,39 @@ a {
     /* width: 50%;
     margin-top: 20px; */
 }
-.header .nav{
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+.nav__mobile {
+    margin: 25px;
+    /* text-align: left; */
 }
-.nav .menu-primary {
+
+.nav__mobile > ul > li > a > i {
+    margin-top: 15px;
+}
+#menu-list {
+    display: none; /* Ocultar el menú al cargar la página */
+}
+  
+  /* Mostrar el menú al hacer clic en el botón */
+#menu-button:active + #menu-list,
+#menu-button:focus + #menu-list {
+    display: block;
+}  
+
+.header .nav__desktop{
+    display: none;
+    /* width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+}
+/* .nav__desktop .menu-primary {
     display: flex;
   }
 .menu-primary .menu-primary__item{
     list-style: none;
     justify-content: space-between;
     width: 300px;
-}
+} */
 /* .header a:hover {
     text-decoration: underline;
 } */
@@ -82,9 +101,9 @@ a {
 /* .menu-primary__item a:hover i + span {
     display: inline;
 } */
-.menu-primary__item a i + span {
+/* .menu-primary__item a i + span {
     display: none;
-}
+} */
 
 /* Seccion de información personal */
 
@@ -115,7 +134,11 @@ a {
     /* padding: 10px; */
 }
 
-main .main--container .main--img {
+/* main */
+.img--container {
+    text-align: center;
+}
+.info--img {
     width: 300px;
     border-radius: 50%;
     overflow: hidden;
@@ -434,6 +457,30 @@ input[type="submit"] {
     }
     .back-home {
         padding-right: 25px;
+    }
+    .header
+    .nav__mobile {
+        display: none;
+    }
+    .header
+    .nav__desktop{
+        display: flex;
+        justify-content: space-between;
+        /* width: 50%; */
+        margin: 20px;
+    }
+    .nav__desktop
+    .menu-primary {
+        display: flex;
+      }
+    .menu-primary
+    .menu-primary__item{
+        list-style: none;
+        justify-content: space-between;
+        min-width: 300px;
+    }
+    .menu-primary__item a i + span {
+        display: none;
     }
     .main--container {
         display: flex;
