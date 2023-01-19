@@ -5,7 +5,7 @@ form.addEventListener("submit", event => {
   const name = form.elements.name.value;
   const email = form.elements.email.value;
   const message = form.elements.message.value;
-  // aquí puedes enviar los datos del formulario a un servidor mediante una petición AJAX
+  // aquí se pueden enviar los datos del formulario a un servidor mediante una petición AJAX
   console.log(name, email, message);
 });
 

@@ -78,21 +78,13 @@ a {
 
 /* Seccion de información personal */
 .main--container {
-    /* display: flex; */
-    /* width: 75%; */
     height: auto;
-    /* margin: 20px auto; */
-    /* justify-content: space-between; */
 }
 
 .section__info-personal {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
-/* .section__info-personal
-.info-personal__container{
-} */
 .info-personal__img--container {
     align-items: center;
 }
@@ -274,7 +266,7 @@ a {
 }
 
 /* Define the grid container */
-.grid-container {
+.courses__grid-container {
     display: grid; /* Use the grid layout */
     grid-template-columns: repeat(3, 1fr); /* Divide the container into 3 equal columns */
     grid-template-rows: repeat(2, 1fr); /* Divide the container into 2 equal rows */
@@ -284,7 +276,7 @@ a {
   }
   
   /* Define the grid items */
-.grid-container > div {
+.courses__grid-container > div {
     /* Add some basic styles for the grid items */
     background-color: #eee;
     padding: 20px;
@@ -374,7 +366,7 @@ a {
 }  
 .courses-training
 .courses__main-container
-.grid-container div ul li a {
+.courses__grid-container div ul li a {
     font-size: 1rem;
 }
 
