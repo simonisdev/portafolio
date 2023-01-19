@@ -11,8 +11,6 @@ html {
 }
 body {
     font-size: 1.6rem;
-    /* background-color:black;
-    color: antiquewhite; */
 }
 
 ul {
@@ -35,16 +33,6 @@ a {
     z-index: 1000; /* para que siempre este en primer plano */
     display: none; /* por defecto no se ve */
   }
-  
-/* .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    height: 20vh;
-} */
-/* .header--logo {
-    padding-left: 10px;
-} */
 .back-home {
     text-align: right;
     padding-right: 10px;
@@ -55,11 +43,7 @@ a {
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* width: 50%;
-    margin-top: 20px; */
+    text-align: left;
 } 
 
 /* menú desplegable */
@@ -68,44 +52,29 @@ a {
     position: relative;
   }
   
-  .menu-item {
+  .menu-title {
     display: block;
-  }
-  
-  .dropdown {
+}
+.dropdown {
     position: absolute;
     display: none;
-  }
-  
-  .menu:hover .dropdown {
-    display: block;
-  }
-/* fin menú desplegable */
-  
-.header .nav__desktop {
-    display: none;
-    /* width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px; */
 }
-/* .nav__desktop .menu-primary {
-    display: flex;
-  }
-.menu-primary .menu-primary__item{
-    list-style: none;
-    justify-content: space-between;
-    width: 300px;
-} */
-/* .header a:hover {
-    text-decoration: underline;
-} */
 
-/* .menu-primary__item a:hover i + span {
-    display: inline;
-} */
-/* .menu-primary__item a i + span {
+.menu:hover .dropdown {
+    display: block;
+}
+.dropdown li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+/* fin menú desplegable */
+
+/* menú desktop */
+.header
+.nav__desktop {
     display: none;
-} */
+}
+/* fin menú desktop */
 
 /* Seccion de información personal */
 .main--container {
@@ -451,35 +420,68 @@ input[type="submit"] {
 /* Media query for larger screens */
 /* @media (min-width: 600px) */
 @media (min-width: 768px) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        height: 20vh;
-    }
-    .menu {
+    .menu { /* menú desplegable */
         display: none;
     }
     .back-home {
         padding-right: 25px;
     }
     /* .header */
+    /* LOGO */
+    /* .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 20vh;
+    } */
+    /* .header--logo {
+        padding-left: 10px;
+    } */
+/* FIN LOGO */
+
+/* MENU PRIMARY */
+/* .nav__desktop .menu-primary {
+    display: flex;
+  }
+.menu-primary .menu-primary__item{
+    list-style: none;
+    justify-content: space-between;
+    width: 300px;
+} */
+/* .header a:hover {
+    text-decoration: underline;
+} */
+
+/* .menu-primary__item a:hover i + span {
+    display: inline;
+} */
+/* .menu-primary__item a i + span {
+    display: none;
+} */
+/* FIN MENU PRIMARY */
+    .header {
+        height: 20vh;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* padding: 15px; */
+        /* text-align: center; */
+    }
     .header
     .nav__desktop {
         display: flex;
-        justify-content: space-between;
-        /* width: 50%; */
-        margin: 20px;
+        justify-content: space-around;
+        margin: 35px;
     }
+    
     .nav__desktop
     .menu-primary {
         display: flex;
-      }
+        justify-content: space-between;
+        width: 75%;
+    }
     .menu-primary
     .menu-primary__item{
         list-style: none;
-        justify-content: space-between;
-        min-width: 300px;
     }
     .menu-primary__item a i + span {
         display: none;
@@ -492,8 +494,6 @@ input[type="submit"] {
         justify-content: space-between;
     }
     .info--name {
-        /* font-size: 2.2rem; */
-        /* margin-bottom: 1.5rem; */
         font-weight: bold;
         color: #17202A;
     }
@@ -504,9 +504,6 @@ input[type="submit"] {
     .menu-primary__item a:hover i + span {
         display: inline;
     }
-    /* .menu-primary__item a i + span {
-        display: none;
-    } */
     .section__tecnologies {
         background-color: #17202A;
         height: 100vh;
