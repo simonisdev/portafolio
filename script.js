@@ -32,7 +32,7 @@ backToTopButton.onclick = function() {
 };
 
 const menu = document.querySelector(".menu");
-const menuItem = document.querySelector(".menu-item");
+const menuItem = document.querySelector(".menu-title");
 const dropdown = document.querySelector(".dropdown");
 
 menuItem.addEventListener("click", () => {
