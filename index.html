@@ -19,33 +19,34 @@
             </a>            
         </div> -->
 
-        <nav class="nav__mobile">
-            <button id="menu-button"><i class="fas fa-bars"></i></button>
-            <ul id="menu-list">
+        <nav class="menu">
+            <a href="#" class="menu-item">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="dropdown">
                 <li>
-                    <a href="#section__tecnologies">
+                    <a href="#section__tecnologies"  class="dropdown-item" id="link">
                         <i class="fas fa-laptop-code"> Lenguajes</i>
-                        <!-- <span>Lenguajes</span> -->
                     </a>
                 </li>
                 <li>
-                    <a href="#section__projects">
+                    <a href="#section__projects"  id="link">
                         <i class="fas fa-project-diagram"> Proyectos</i>
                         <!-- <span>Proyectos</span> -->
                     </a>
                 </li>
                 <li>
-                <a href="#section__training">
-                    <i class="fas fa-book-reader"> Formación</i>
-                    <!-- <span>Formación</span> -->
-                </a>
-            </li>
-            <li>
-                <a href="#section__contact">
-                    <i class="fas fa-user-circle"> Contacto</i>
-                    <!-- <span>Contacto</span> -->
-                </a>
-            </li>
+                    <a href="#section__training" id="link">
+                        <i class="fas fa-book-reader"> Formación</i>
+                        <!-- <span>Formación</span> -->
+                    </a>                    
+                </li>
+                <li>
+                    <a href="#section__contact" id="link">
+                        <i class="fas fa-user-circle"> Contacto</i>
+                        <!-- <span>Contacto</span> -->
+                    </a>                    
+                </li>                
             </ul>
         </nav>
             
@@ -96,7 +97,7 @@
                     <h1 class="info--title">Front-End Developer</h1>
                     <br>
                     <p class="info--description">
-                        Como desarrollador Front-End cuento con experiencia en HTML, CSS y JavaScript, además he  recibido capacitación en Angular y estoy comprometido en mejorar constantemente mis habilidades a través de práctica y aprendizaje continuo.
+                        Como desarrollador Front-End cuento con experiencia en HTML, CSS y JavaScript, además, tengo conocimiento en Angular y estoy comprometido en mejorar constantemente mis habilidades a través de práctica y aprendizaje continuo.
                     </p>
     
                     <a href="#section__tecnologies">
@@ -151,11 +152,11 @@
         <!-- Section tecnologies -->
         <section class="section__tecnologies" id="section__tecnologies">
 
-            <div class="back-home">
+            <!-- <div class="back-home">
                 <a href="#header">
                     <i class="fas fa-home"></i>
                 </a>
-            </div>
+            </div> -->
             
             <div class="title__section">
                 <h2>Lenguajes y Tecnologías</h2>
@@ -208,11 +209,11 @@
 
         <!-- Section Projects -->
         <section class="section__projects" id="section__projects">
-            <div class="back-home">
+            <!-- <div class="back-home">
                 <a href="#header">
                     <i class="fas fa-home"></i>
                 </a>
-            </div>
+            </div> -->
             <div class="title__section">
                 <h2>Proyectos</h2>
             </div>
@@ -255,11 +256,11 @@
 
         <!-- Training -->
         <section class="section__training" id="section__training">
-            <div class="back-home">
+            <!-- <div class="back-home">
                 <a href="#header">
                     <i class="fas fa-home"></i>
                 </a>
-            </div>
+            </div> -->
             <div class="title__section">
                 <h2>Formación universitaria</h2>
             </div>
@@ -408,10 +409,13 @@
 
     </main>
 
-    <button id="back-to-top">^</button>
+    <!-- <button id="back-to-top">^</button> -->
+    <button id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <footer class="footer">
-        <div class="copyright">Copyright © 2023 - <a href="#">Simón Agredo</a></div>
+        <div class="copyright"><a href="#">Copyright © 2023 - Simón Agredo</a></div>
     </footer>
 
     <!-- <script src="./cform.js"></script> -->

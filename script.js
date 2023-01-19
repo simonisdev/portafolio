@@ -31,12 +31,18 @@ backToTopButton.onclick = function() {
     },15);
 };
 
-// Obtener el botón y el menú
-const menuButton = document.getElementById("menu-button");
-const menuList = document.getElementById("menu-list");
+const menu = document.querySelector(".menu");
+const menuItem = document.querySelector(".menu-item");
+const dropdown = document.querySelector(".dropdown");
 
-// Agregar un evento al hacer clic en el botón
-menuButton.addEventListener("click", function() {
-  // Alternar la clase "open" en el menú
-  menuList.classList.toggle("open");
+menuItem.addEventListener("click", () => {
+  dropdown.classList.toggle("show");
 });
+
+// const link = document.querySelector('#link');
+
+// link.addEventListener('click', () => {
+//   document.getElementById("section-two").scrollIntoView({ 
+//     behavior: 'smooth' 
+//   });
+// });

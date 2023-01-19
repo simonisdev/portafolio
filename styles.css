@@ -27,7 +27,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 50px;
-    background-color: blue;
+    background-color:navy;
     color: white;
     padding: 10px 15px;
     border-radius: 50%;
@@ -60,27 +60,29 @@ a {
     justify-content: space-between;
     /* width: 50%;
     margin-top: 20px; */
-}
+} 
 
-.nav__mobile {
+/* menú desplegable */
+.menu {
     margin: 25px;
-    /* text-align: left; */
-}
-
-.nav__mobile > ul > li > a > i {
-    margin-top: 15px;
-}
-#menu-list {
-    display: none; /* Ocultar el menú al cargar la página */
-}
+    position: relative;
+  }
   
-  /* Mostrar el menú al hacer clic en el botón */
-#menu-button:active + #menu-list,
-#menu-button:focus + #menu-list {
+  .menu-item {
     display: block;
-}  
-
-.header .nav__desktop{
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: none;
+  }
+  
+  .menu:hover .dropdown {
+    display: block;
+  }
+/* fin menú desplegable */
+  
+.header .nav__desktop {
     display: none;
     /* width: 50%;
     margin-top: 20px;
@@ -106,7 +108,6 @@ a {
 } */
 
 /* Seccion de información personal */
-
 .main--container {
     /* display: flex; */
     /* width: 75%; */
@@ -448,22 +449,23 @@ input[type="submit"] {
 }
 
 /* Media query for larger screens */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) */
+@media (min-width: 768px) {
     .header {
         display: flex;
         justify-content: space-between;
         padding: 15px;
         height: 20vh;
     }
+    .menu {
+        display: none;
+    }
     .back-home {
         padding-right: 25px;
     }
+    /* .header */
     .header
-    .nav__mobile {
-        display: none;
-    }
-    .header
-    .nav__desktop{
+    .nav__desktop {
         display: flex;
         justify-content: space-between;
         /* width: 50%; */
