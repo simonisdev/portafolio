@@ -39,7 +39,7 @@ a {
 }
 .title__section {
     text-align: center;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 .header {
@@ -239,48 +239,11 @@ a {
     margin-bottom: 20px;
 }
 
-/* Section Projects */
+/* SECTION PROJECTS */
 .section__projects {
-    /* height: 100vh; */
     padding-top: 20px;
     padding-bottom: 20px;
-    /* background-color: #68e600; */
     background-color: rgba(102, 204, 0, 0.7);
-}
-.section__projects
-.title__section {
-    text-align: center;
-    margin: 20px 0;
-    /* color: #e65100; */
-}
-/* .projects h2 {
-} */
-.projects
-.projects--container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
-    /* margin-top: 20px; */
-    padding-top: 25px;
-}
-
-/* Define the grid container */
-.courses__grid-container {
-    display: grid; /* Use the grid layout */
-    grid-template-columns: repeat(3, 1fr); /* Divide the container into 3 equal columns */
-    grid-template-rows: repeat(2, 1fr); /* Divide the container into 2 equal rows */
-    grid-gap: 10px; /* Add a gap between each cell in the grid */
-    justify-content: center; /* Center the grid horizontally within the container */
-    align-content: center; /* Center the grid vertically within the container */
-  }
-  
-  /* Define the grid items */
-.courses__grid-container > div {
-    /* Add some basic styles for the grid items */
-    background-color: #eee;
-    padding: 20px;
-    text-align: center;
 }
 .projects--container {
     display: flex;
@@ -311,58 +274,46 @@ a {
     margin-top: 10px;
 }
 
-
-/* .training--container */
+/* SECTION TRAINING */
+/* Define the grid container */
 .section__training {
     font-family: 'Assistant', sans-serif;
-    padding-top: 20px;
-    /* height: 100vh; */
+    padding: 20px 0;
 }
-
-.section__training
-.title__section {
+.sub-title__training--section {
+    margin: 15px 0;
     text-align: center;
 }
-.training--container{
-    /* height: 100vh; */
-    padding: 0 20px;
-}
-.universitary-education {
+.higher-education__container {
     display: flex;
     flex-direction: row;
-    margin: 20px 10% 20px 10%;
-    /* padding: 25px; */
-    /* width: 80%; */
+    margin: 20px 10%;
 }
-/* .universitary-education__item {
-} */
 .training--container h2 {
     margin-bottom: 20px;
     text-align: center;
 }
-.universitary-education__item a img {
+.higher-education__item a img {
     max-width: 250px;
-    /* margin-top: 10px; */
     margin-bottom: 20px;
     text-align: center;
 }
-.courses-training {
-    margin: 0 10%;
-    padding: 25px;
-    width: 80%;
+.courses__grid-container {
+    margin: 0 10px;
 }
-.courses-training h2 {
-    /* margin: 25px 0; */
+.courses__grid-container > div {
+    background-color: #eee;
+    margin: 10px 0;
+    padding: 20px;
     text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
 .courses--list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    /* background-color: burlywood; */
-    /* margin: 0 5px 0 5px; */
+
 }  
 .courses-training
 .courses__main-container
@@ -373,6 +324,7 @@ a {
 .section__contact {
     background-color: yellow;
     height: 90vh;
+    padding: 20px;
 }
 /* Mobile first styles */
 form {
@@ -418,45 +370,8 @@ input[type="submit"] {
     .back-home {
         padding-right: 25px;
     }
-    /* .header */
-    /* LOGO */
-    /* .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    height: 20vh;
-    } */
-    /* .header--logo {
-        padding-left: 10px;
-    } */
-/* FIN LOGO */
-
-/* MENU PRIMARY */
-/* .nav__desktop .menu-primary {
-    display: flex;
-  }
-.menu-primary .menu-primary__item{
-    list-style: none;
-    justify-content: space-between;
-    width: 300px;
-} */
-/* .header a:hover {
-    text-decoration: underline;
-} */
-
-/* .menu-primary__item a:hover i + span {
-    display: inline;
-} */
-/* .menu-primary__item a i + span {
-    display: none;
-} */
-/* FIN MENU PRIMARY */
     .header {
         height: 20vh;
-        /* display: flex; */
-        /* justify-content: space-between; */
-        /* padding: 15px; */
-        /* text-align: center; */
     }
     .header
     .nav__desktop {
@@ -510,9 +425,6 @@ input[type="submit"] {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
-        /* justify-items: center;
-        align-content: center;
-        text-align: center; */
     }
     .section__contact {
         display: flex;
@@ -524,6 +436,17 @@ input[type="submit"] {
     }
     .section__projects {
         height: 100vh;
+    }
+    .courses__grid-container {
+        display: grid; /* Use the grid layout */
+        grid-template-columns: repeat(3, 1fr); /* Divide the container into 3 equal columns */
+        grid-template-rows: repeat(2, 1fr); /* Divide the container into 2 equal rows */
+        grid-gap: 10px; /* Add a gap between each cell in the grid */
+        justify-content: center; /* Center the grid horizontally within the container */
+        align-content: center; /* Center the grid vertically within the container */
+    }
+    .courses__grid-container > div {
+        margin: 0;
     }
     .section__contact
     .section__contact--form {
