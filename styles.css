@@ -243,7 +243,8 @@ a {
 .section__projects {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgba(102, 204, 0, 0.7);
+    /* background-color: rgba(102, 204, 0, 0.7); */
+
 }
 .projects--container {
     display: flex;
@@ -264,9 +265,10 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 15px 0;
-    /* background-color: #D5DBDB; */
-    background-color: rgba(224, 95, 14, 0.5);
+    background-color: cadetblue;
+    /* background-color: rgba(224, 95, 14, 0.5); */
     padding: 20px;
+    margin: 10px 0;
     text-align: center;
 }
 .projects__grid-container div img {
@@ -275,10 +277,14 @@ a {
 }
 
 /* SECTION TRAINING */
-/* Define the grid container */
 .section__training {
     font-family: 'Assistant', sans-serif;
     padding: 20px 0;
+    background-color: #17202A;
+    color: #fff;
+}
+.section__training p {
+    color: #fff;
 }
 .sub-title__training--section {
     margin: 15px 0;
@@ -288,6 +294,10 @@ a {
     display: flex;
     flex-direction: row;
     margin: 20px 10%;
+}
+.courses__grid-container h3 {
+    color: rgb(58, 58, 58);
+    margin-bottom: 5px;
 }
 .training--container h2 {
     margin-bottom: 20px;
