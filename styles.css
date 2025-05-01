@@ -183,9 +183,9 @@ a {
     justify-content: center;
 }
 .social-menu__item:hover {
-    background-color: #e65100;
+    background-color: rgba(84, 148, 78, 0.7);
     align-items: center;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 /* Section tecnologies */
